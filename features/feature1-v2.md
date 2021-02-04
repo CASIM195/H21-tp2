@@ -1,17 +1,15 @@
-# Feature 1 - Mise à jour
+# Feature 1 - Création d'un produit (v2)
 
 ## Description
 
-En temps qu'utilisateur du service, je désire pouvoir ajouter un item en vente.
+En temps que vendeur, je désire pouvoir ajouter un produit en vente.
 
 ## Requête
 
-```
-HTTP POST /inventory
-```
+`HTTP POST /inventory`
 ```ts
 {
-  accountId: string,
+  sellerId: string,
   name: string, // max 40 caractères
   description: string, // max 500 caractères
   initialPrice: number, // 2 decimals
@@ -28,15 +26,16 @@ Headers:
   Location: string
 ```
 
-... où le header `Location` contient l'URL vers le nouvel item publié (`http://localhost:8080/api/inventory/{id}`)
+... où le header `Location` contient l'URL vers le nouvel item publié (`http://localhost:8080/api/inventory/{productId}`)
 
 ## Exceptions
 
 | condition                     | status | erreur              |
 | ----------------------------- | ------ | ------------------- |
+| `sellerId` inexistant         | 404    | `SELLER_NOT_FOUND`  |
 | `name` trop long              | 400    | `TEXT_TOO_LONG`     |
 | `description` trop long       | 400    | `TEXT_TOO_LONG`     |
-| `startTime` mauvais format    | 400    | `INVALID_DATE`      |
+| `startTime` mauvais format    | 400    | `INVALID_DATETIME`  |
 | `duration` trop long          | 400    | `INVALID_DATERANGE` |
 | `initialPrice` mauvais format | 400    | `INVALID_AMOUNT`    |
 | champs vide                   | 400    | `MISSING_FIELD`     |

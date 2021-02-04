@@ -1,12 +1,12 @@
-# Feature 3
+# Feature 3 - Affichage d'un produit
 
 ## Description
 
-En tant qu'utilisateur du service, je désire visualiser les détails d'un produit en vente.
+En tant qu'acheteur, je désire visualiser les détails d'un produit en vente.
 
 ## Requête
 
-`GET /inventory/{id}`
+`GET /inventory/{productId}`
 
 ## Réponse
 
@@ -15,7 +15,7 @@ En tant qu'utilisateur du service, je désire visualiser les détails d'un produ
 {
   id: string,
   name: string,
-  publisher: string,
+  sellerId: string,
   description: string,
   initialPrice: number, // 2 decimals
   currentPrice: number, // 2 decimals
@@ -26,6 +26,6 @@ En tant qu'utilisateur du service, je désire visualiser les détails d'un produ
 
 ## Exceptions
 
-| condition       | status | erreur              |
-| --------------- | ------ | ------------------- |
-| `id` inexistant | 404    | `PRODUCT_NOT_FOUND` |
+| condition              | status | erreur              |
+| ---------------------- | ------ | ------------------- |
+| `productId` inexistant | 404    | `PRODUCT_NOT_FOUND` |

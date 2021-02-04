@@ -12,7 +12,7 @@
 
 ## Partie 1 - Outils de planification (30%)
 
-**Avant** d'entamer la programmation, nous vous demandons de lire attentivement les exigences de la **partie 2**. Nous vous demandons ensuite de planifier vos tâches *de développement logiciel* avec **Github**. 
+**Avant** d'entamer la programmation, nous vous demandons de lire attentivement les exigences du tp. Nous vous demandons ensuite de planifier vos tâches *de développement logiciel* avec **Github**. 
 
 1. :scroll: **Créez un *milestone*** pour la remise du tp. Insérez une capture d'écran afin de montrer les informations du milestone ainsi que les issues qu'il contient.
 2. :scroll: **Créez des *issues*** afin de suivre votre progrès et de vous séparer la tâche. :warning: **Attention** Ce n'est pas nécéssairement 1 issue pour 1 feature. Assurez-vous également d'y remplir l'ensemble des parties tel que vu en laboratoire (l'issue doit au moins être en cours). Insérez une capture d'écran par issue (MAX 3). 
@@ -29,8 +29,8 @@ De plus, à partir de ce TP, vous devez gérer les exceptions et retourner les r
 
 ### Features
 
-- [Feature 1 (modifiée)](./features/feature1-maj.md)
-- [Feature 2 (modifiée)](./features/feature2-maj.md)
+- [Feature 1 (v2)](./features/feature1-v2.md)
+- [Feature 2 (v2)](./features/feature2-v2.md)
 - [Feature 3](./features/feature3.md)
 - [Feature 4](./features/feature4.md)
 - [Feature 5](./features/feature5.md)
@@ -49,8 +49,12 @@ De plus, on s'attend à ce que l'ensemble des classes *logiques* soient testées
 
 - Les factories
 - Les assemblers
+- Les entites
+- Les use-cases
 - Les implémentations de repositories
 - Les value objects (ex: ids, amount, etc.)
 - Toute autre classe effectuant une certaine logique (transformation, action, calcul, copiage, validation, etc.)
+
+Vous pouvez omettre les tests des Resources puisque vous aurez fait des tests E2E.
 
 > Pour ceux étant plus avancés, on ne s'attend **pas** à des tests d'interactions (aka avec des Mocks et des `verify`). 

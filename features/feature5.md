@@ -1,28 +1,26 @@
-# Feature 5
+# Feature 5 - Affichage d'un vendeur
 
 ## Description
 
-En tant qu'utilisateur du service, je désire renchérir sur un produit dans le but d'avoir une chance de l'obtenir.
+En tant qu'utilisateur du service, je désire visualiser les détails d'un vendeur.
 
 ## Requête
 
-`POST /inventory/{id}/offer`
-
-```ts
-{
-    accountId: string,
-    amount: number // max 2 decimals
-}
-```
+`GET /seller/{sellerId}`
 
 ## Réponse
 
 `HTTP 200 OK`
+```ts
+{
+  name: string,
+  description: string,
+  createdAt: datetime // ISO-8601 at UTC
+}
+```
 
 ## Exceptions
 
-| condition                                 | status | erreur              |
-| ----------------------------------------- | ------ | ------------------- |
-| `id` inexistant                           | 404    | `PRODUCT_NOT_FOUND` |
-| `amount` format invalide, pas assez élevé | 400    | `INVALID_AMOUNT`    |
-| enchère terminée                          | 400    | `BIDDING_CLOSED`    |
+| condition             | status | erreur             |
+| --------------------- | ------ | ------------------ |
+| `sellerId` inexistant | 404    | `SELLER_NOT_FOUND` |

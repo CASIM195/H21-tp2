@@ -8,8 +8,8 @@ En temps qu'utilisateur du service, j'aimerais être en mesure de mieux comprend
 
 ```ts
 {
-    code: string,
-    message: string
+  code: string,
+  message: string
 }
 ```
 
@@ -18,7 +18,7 @@ En temps qu'utilisateur du service, j'aimerais être en mesure de mieux comprend
 `HTTP 400 BAD REQUEST`
 ```json
 {
-    "code": "INVALID_DATE",
-    "message": "birthDate should follow the ISO-8601 standard"
+  "code": "INVALID_DATETIME",
+  "message": "birthDate should follow the ISO-8601 standard"
 }
 ```
