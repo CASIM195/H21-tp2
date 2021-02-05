@@ -12,7 +12,7 @@ En temps que vendeur, je désire pouvoir ajouter un produit en vente.
   sellerId: string,
   name: string, // max 40 caractères
   description: string, // max 500 caractères
-  initialPrice: number, // 2 decimals
+  initialPrice: number, // arrondi à 2 décimales
   startTime: datetime, // ISO-8601 at UTC
   duration: number // milliseconds, max 6 mois
 }
