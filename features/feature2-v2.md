@@ -28,10 +28,12 @@ En temps qu'acheteur, je désire pouvoir visionner l'ensemble des produits à ve
   items: [
     {
       id: string,
-      sellerId: string,
       name: string,
+      sellerId: string,
       description: string,
+      initialPrice: number, // arrondi à 2 décimales
       currentPrice: number, // arrondi à 2 décimales
+      startTime: datetime, // ISO-8601 at UTC
       endTime: datetime // ISO-8601 at UTC
     }
   ]
