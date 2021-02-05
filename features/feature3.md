@@ -17,8 +17,8 @@ En tant qu'acheteur, je désire visualiser les détails d'un produit en vente.
   name: string,
   sellerId: string,
   description: string,
-  initialPrice: number, // 2 decimals
-  currentPrice: number, // 2 decimals
+  initialPrice: number, // arrondi à 2 décimales
+  currentPrice: number, // arrondi à 2 décimales
   startTime: datetime, // ISO-8601 at UTC
   endTime: datetime // ISO-8601 at UTC
 }
