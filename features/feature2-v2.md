@@ -10,15 +10,15 @@ En temps qu'acheteur, je désire pouvoir visionner l'ensemble des produits à ve
 
 ### Query params
 
-| nom            | type              | description                              |
-| -------------- | ----------------- | ---------------------------------------- |
-| `status`       | `ongoing \| ended` | selon la date de fin                     |
-| `name`         | `string`          | **contient** le nom `name` (pas absolu)  |
-| `sellerId`     | `string`          | ID du seller                             |
-| `minPrice`     | `number`          | prix min                                 |
-| `maxPrice`     | `number`          | prix max                                 |
-| `minInflation` | `number`          | % min de `currentPrice` / `initialPrice` |
-| `maxInflation` | `number`          | % max de `currentPrice` / `initialPrice` |
+| nom            | type               | description                                         |
+| -------------- | ------------------ | --------------------------------------------------- |
+| `status`       | `ongoing \| ended` | selon la date de fin                                |
+| `name`         | `string`           | **contient** le nom `name` (pas absolu)             |
+| `sellerId`     | `string`           | ID du seller                                        |
+| `minPrice`     | `number`           | prix min                                            |
+| `maxPrice`     | `number`           | prix max                                            |
+| `minInflation` | `number`           | % min de `currentPrice` / `initialPrice` (de 0 à 1) |
+| `maxInflation` | `number`           | % max de `currentPrice` / `initialPrice` (de 0 à 1) |
 
 ## Réponse
 
