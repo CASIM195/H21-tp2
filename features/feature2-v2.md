@@ -31,7 +31,7 @@ En temps qu'acheteur, je désire pouvoir visionner l'ensemble des produits à ve
       sellerId: string,
       name: string,
       description: string,
-      currentPrice: number, // 2 decimals
+      currentPrice: number, // arrondi à 2 décimales
       endTime: datetime // ISO-8601 at UTC
     }
   ]
