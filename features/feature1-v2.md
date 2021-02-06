@@ -7,14 +7,15 @@ En temps que vendeur, je désire pouvoir ajouter un produit en vente.
 ## Requête
 
 `HTTP POST /inventory`
+
 ```ts
 {
   sellerId: string,
   name: string, // max 40 caractères
-  description: string, // max 500 caractères
-  initialPrice: number, // arrondi à 2 décimales
+  description: string,
+  initialPrice: number, // positif, arrondi à 2 décimales, min 1.00
   startTime: datetime, // ISO-8601 at UTC
-  duration: number // milliseconds, max 6 mois
+  duration: number // days, min 1 max 31
 }
 ```
 
@@ -26,16 +27,14 @@ Headers:
   Location: string
 ```
 
-... où le header `Location` contient l'URL vers le nouvel item publié (`http://localhost:8080/api/inventory/{productId}`)
+... où le header `Location` contient l'URL vers le nouveau produit (`http://localhost:8080/api/inventory/{productId}`)
 
 ## Exceptions
 
-| condition                     | status | erreur              |
-| ----------------------------- | ------ | ------------------- |
-| `sellerId` inexistant         | 404    | `SELLER_NOT_FOUND`  |
-| `name` trop long              | 400    | `TEXT_TOO_LONG`     |
-| `description` trop long       | 400    | `TEXT_TOO_LONG`     |
-| `startTime` mauvais format    | 400    | `INVALID_DATETIME`  |
-| `duration` trop long          | 400    | `INVALID_DATERANGE` |
-| `initialPrice` mauvais format | 400    | `INVALID_AMOUNT`    |
-| champs vide                   | 400    | `MISSING_FIELD`     |
+| condition                  | status | erreur              |
+| -------------------------- | ------ | ------------------- |
+| `sellerId` inexistant      | 404    | `SELLER_NOT_FOUND`  |
+| `startTime` mauvais format | 400    | `INVALID_DATETIME`  |
+| `duration` invalide        | 400    | `INVALID_DATERANGE` |
+| `initialPrice` invalide    | 400    | `INVALID_AMOUNT`    |
+| champs vide                | 400    | `MISSING_FIELD`     |

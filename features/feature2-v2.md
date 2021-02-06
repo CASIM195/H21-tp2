@@ -10,19 +10,20 @@ En temps qu'acheteur, je désire pouvoir visionner l'ensemble des produits à ve
 
 ### Query params
 
-| nom            | type               | description                                         |
-| -------------- | ------------------ | --------------------------------------------------- |
-| `status`       | `ongoing \| ended` | selon la date de fin                                |
-| `name`         | `string`           | **contient** le nom `name` (pas absolu)             |
-| `sellerId`     | `string`           | ID du seller                                        |
-| `minPrice`     | `number`           | prix min                                            |
-| `maxPrice`     | `number`           | prix max                                            |
-| `minInflation` | `number`           | % min de `currentPrice` / `initialPrice` (de 0 à 1) |
-| `maxInflation` | `number`           | % max de `currentPrice` / `initialPrice` (de 0 à 1) |
+| nom            | type               | description                                                     |
+| -------------- | ------------------ | --------------------------------------------------------------- |
+| `status`       | `ongoing \| ended` | selon la date de fin                                            |
+| `name`         | `string`           | **contient** le nom `name` (pas absolu, **pas** case sensitive) |
+| `sellerId`     | `string`           | ID du seller                                                    |
+| `minPrice`     | `number`           | prix min                                                        |
+| `maxPrice`     | `number`           | prix max                                                        |
+| `minInflation` | `number`           | % min de `currentPrice` / `initialPrice` (de 0 à 1)             |
+| `maxInflation` | `number`           | % max de `currentPrice` / `initialPrice` (de 0 à 1)             |
 
 ## Réponse
 
 `HTTP 200 OK`
+
 ```ts
 {
   items: [
@@ -34,9 +35,9 @@ En temps qu'acheteur, je désire pouvoir visionner l'ensemble des produits à ve
       initialPrice: number, // arrondi à 2 décimales
       currentPrice: number, // arrondi à 2 décimales
       startTime: datetime, // ISO-8601 at UTC
-      endTime: datetime // ISO-8601 at UTC
-    }
-  ]
+      endTime: datetime, // ISO-8601 at UTC
+    },
+  ];
 }
 ```
 

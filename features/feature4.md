@@ -7,10 +7,11 @@ En tant que commerçant, j'aimerais pouvoir me créer un compte afin de vendre m
 ## Requête
 
 `POST /seller`
+
 ```ts
 {
-  name: string, // max 30 caractères,
-  description: string // max 200 caractères
+  name: string,
+  description: string
 }
 ```
 
@@ -22,11 +23,10 @@ Headers:
   Location: string
 ```
 
-... où le header `Location` contient l'URL vers le nouveau utilisateur (`http://localhost:8080/api/seller/{sellerId}`)
+... où le header `Location` contient l'URL vers le nouveau vendeur (`http://localhost:8080/api/seller/{sellerId}`)
 
 ## Exceptions
 
-| condition               | status | erreur          |
-| ----------------------- | ------ | --------------- |
-| `name` trop long        | 400    | `TEXT_TOO_LONG` |
-| `description` trop long | 400    | `TEXT_TOO_LONG` |
+| condition   | status | erreur          |
+| ----------- | ------ | --------------- |
+| champs vide | 400    | `MISSING_FIELD` |

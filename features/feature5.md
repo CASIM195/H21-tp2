@@ -11,8 +11,10 @@ En tant qu'utilisateur du service, je désire visualiser les détails d'un vende
 ## Réponse
 
 `HTTP 200 OK`
+
 ```ts
 {
+  id: string,
   name: string,
   description: string,
   createdAt: datetime // ISO-8601 at UTC
