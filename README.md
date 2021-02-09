@@ -4,11 +4,13 @@
 
 ## Objectifs
 
+- Utilisez des outils facilitant la collaboration
 - Utiliser des outils de planification et de gestion efficacement et de façon organisée
 - Gérer les exceptions du code
 - Renvoyer des exceptions HTTP formattées
 - Créer des tests unitaires et E2E
 - Ajouter des nouvelles fonctionnalités à partir de récits utilisateurs
+- Mettre en place un _workflow_ d'intégration continue
 
 ## Partie 1 - Outils collaboratifs (10%)
 
@@ -68,9 +70,9 @@ De plus, on s'attend à ce que l'ensemble des classes _logiques_ soient testées
 
 Maintenant que des tests de qualité sont en place, vous pouvez avoir la confiance de pratiquer l'intégration continue. Ainsi, on vous demande de mettre en place un _workflow_ Github Actions vous permettant d'automatiser vos tests. Votre _workflow_ **doit au moins** comprendre les tâches suivantes :
 
-1. Linting
-2. Compilation
-3. Unit-tests
-4. E2E tests
+- Linting
+- Compilation
+- Unit-tests
+- E2E tests
 
 Vous devez également déterminer le nombre de _jobs_ qui sont nécéssaires ainsi que leurs dépendances.
