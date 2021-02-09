@@ -10,13 +10,13 @@
 - Créer des tests unitaires et E2E
 - Ajouter des nouvelles fonctionnalités à partir de récits utilisateurs
 
-## Partie 1 - Outils collaboratifs (5%)
+## Partie 1 - Outils collaboratifs (10%)
 
 1. En équipe, choisissez une convention de _check style_ (_linting_) qui convient à tous.
-2. Configurer la bien dans IntelliJ afin d'activer le formattage automatique.
-3. Ajoutez l'étape de _checkstyle_ dans le cycle de vie de Maven
+2. Configurez-la dans IntelliJ afin d'activer le formattage automatique.
+3. Ajoutez l'étape de _checkstyle_ dans le cycle de vie Maven.
 
-## Partie 2 - Outils de planification (25%)
+## Partie 2 - Outils de planification (20%)
 
 **Avant** d'entamer la programmation, nous vous demandons de lire attentivement les exigences du tp. Nous vous demandons ensuite de planifier vos tâches _de développement logiciel_ avec **Github**.
 
@@ -27,14 +27,13 @@
 
 ## Partie 3 - Code (30%)
 
-Pour cette partie, vous devrez développer les features demandées. Les formats de requêtes et réponse utilisent la notation typée de Typescript. **On s'attend à une réponse dans le format JSON pour l'ensemble des appels à l'API**. Des tests automatisés vérifieront les bons retours de votre API. Nous corrigerons également la **clarté** (clean code), l'**organisation** et l'**uniformisation** du code.
+Pour cette partie, vous devez développer les features demandées. Les formats de requêtes et réponses utilisent la notation typée de Typescript. **On s'attend à une réponse dans le format JSON pour l'ensemble des appels à l'API**. Des tests automatisés vérifieront les bons retours de votre API. Nous corrigerons également la **clarté** (clean code), l'**organisation** et l'**uniformisation** du code.
 
 De plus, à partir de ce TP, vous devez gérer les exceptions et retourner les réponses demandées. Le format global de toutes les exceptions est [**décrit ICI**](./features/exceptions.md).
 
-:warning: **Attention**: Les features 1 et 2 ont été modifiées (incluant les payloads!). Assurez-vous de bien les mettre à jour en suivant les nouvelles descriptions!
-
 ### Features
 
+- [Exceptions](./features/exceptions.md)
 - [Feature 1 (v2)](./features/feature1-v2.md)
 - [Feature 3](./features/feature3.md)
 - [Feature 4](./features/feature4.md)
@@ -42,12 +41,12 @@ De plus, à partir de ce TP, vous devez gérer les exceptions et retourner les r
 
 ## Partie 4 - Tests (30%)
 
-Pour cette partie, on vous demande de tester chaque appel à votre API, selon votre méthode préférée (_Rest-Assured_, _Postman_, etc.). Ces tests doivent inclure, pour **chaque** route d'API:
+Pour cette partie, on vous demande de tester chaque appel à votre API, selon votre méthode préférée (_Rest-Assured_, _Postman_, etc.). Vous devez donc tester, pour **chaque** route d'API:
 
 - Les appels réussis
 - Les appels erronés
 - Les payloads
-- Les code d'erreur
+- Les codes d'erreur
 - Les status HTTP
 
 De plus, on s'attend à ce que l'ensemble des classes _logiques_ soient testées unitairement, c'est-à-dire :
@@ -61,7 +60,7 @@ De plus, on s'attend à ce que l'ensemble des classes _logiques_ soient testées
 
 **Détails**:
 
-- Vous pouvez omettre les tests des Resources puisque vous aurez fait des tests E2E.
+- Vous pouvez omettre les tests de Resources puisque vous aurez fait des tests E2E.
 - Pour ce TP, vous pouvez également omettre les tests de UseCases puisqu'ils forment plutôt des tests fonctionnels et d'intégrations. Ceux-ci seront vu dans un prochain TP.
 - Pour ceux étant plus avancés, on ne s'attend **pas** à des tests d'interactions (aka avec des Mocks et des `verify`).
 
@@ -74,4 +73,4 @@ Maintenant que des tests de qualité sont en place, vous pouvez avoir la confian
 3. Unit-tests
 4. E2E tests
 
-Vous devrez également déterminer le nombre de _jobs_ qui seront nécéssaires ainsi que leurs dépendances.
+Vous devez également déterminer le nombre de _jobs_ qui sont nécéssaires ainsi que leurs dépendances.
