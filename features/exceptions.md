@@ -8,10 +8,12 @@ En temps qu'utilisateur du service, j'aimerais avoir plus d'information concerna
 
 | critère | description                                                                                                                                                                   |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| C1      | Un status HTTP d'erreur est présent                                                                                                                                           |
-| C2      | Pour toute forme de requête `POST`, si un champs est manquant ou vide (`null` ou `""`), le code d'erreur `MISSING_FIELD` ainsi que le status `400 BAD REQUEST` sont renvoyés. |
-| C3      | Pour toute erreure inconnue, le code d'erreur `UNKNOWN_ERROR` ainsi que le tatus `500 INTERNAL SERVER ERROR` sont renvoyés.                                                   |
-| C4      | Le message d'erreur doit en tout temps être explicatif et clair                                                                                                               |
+| C1      | Un status HTTP d'erreur (4xx ou 5xx) est présent.                                                                                                                             |
+| C2      | Un code d'erreur est présent.                                                                                                                                                 |
+| C3      | Un message d'erreur explicatif et clair est présent.                                                                                                                          |
+| C4      | Pour toute forme de requête `POST`, si un champs est manquant ou vide (`null` ou `""`), le code d'erreur `MISSING_FIELD` ainsi que le status `400 BAD REQUEST` sont renvoyés. |
+| C5      | Pour toute erreure inconnue, le code d'erreur `UNKNOWN_ERROR` ainsi que le tatus `500 INTERNAL SERVER ERROR` sont renvoyés.                                                   |
+| C6      | **Aucune** erreur préformattée par Jersey ne doit se rendre au client.                                                                                                        |
 
 ## Réponse
 
