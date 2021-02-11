@@ -15,7 +15,7 @@
 
 ## À remettre
 
-Les questions identifiées avec l'émoticône :scroll: (ainsi que leurs sous-questions) devront être répondues à l'aide du fichier `exercices/tp2.md` déjà présent dans votre repo de projet. Lorsque votre travail sera terminé, nous vous demandons de créer un **tag** nommé `remise2` (**le nom doit être exact**). C'est la version liée à ce tag qui sera corrigée. Si vous omettez d'indiquer le tag, la **note de 0** vous sera attribuée.
+Les questions identifiées avec l'émoticône :scroll: (ainsi que leurs sous-questions) devront être répondues à l'aide du fichier `exercices/tp2.md` déjà présent dans votre repo de projet. Lorsque votre travail sera terminé, nous vous demandons de créer un **tag** nommé **`remise2`** (**le nom doit être exact**). C'est la version liée à ce tag qui sera corrigée. Si vous omettez d'indiquer le tag, la **note de 0** vous sera attribuée.
 
 ## Partie 1 - Outils de planification (25%)
 
