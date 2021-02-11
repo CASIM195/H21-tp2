@@ -4,12 +4,13 @@
 
 ## Objectifs
 
-- Utilisez des outils facilitant la collaboration
 - Utiliser des outils de planification et de gestion efficacement et de façon organisée
+- Utiliser des outils facilitant la collaboration
 - Gérer les exceptions du code
 - Renvoyer des exceptions HTTP formattées
 - Créer des tests unitaires et E2E
 - Ajouter des nouvelles fonctionnalités à partir de récits utilisateurs
+- Modifier des fonctionnalités existantes
 - Mettre en place un _workflow_ d'intégration continue
 
 ## À remettre
