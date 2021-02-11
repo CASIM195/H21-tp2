@@ -16,13 +16,7 @@
 
 Les questions identifiées avec l'émoticône :scroll: (ainsi que leurs sous-questions) devront être répondues à l'aide du fichier `exercices/tp2.md` déjà présent dans votre repo de projet. Lorsque votre travail sera terminé, nous vous demandons de créer un **tag** nommé `remise2` (**le nom doit être exact**). C'est la version liée à ce tag qui sera corrigée. Si vous omettez d'indiquer le tag, la **note de 0** vous sera attribuée.
 
-## Partie 1 - Outils collaboratifs (5%)
-
-1. En équipe, choisissez une convention de _check style_ (_linting_) qui convient à tous.
-2. Configurez-la dans IntelliJ afin d'activer le formattage automatique.
-3. Ajoutez l'étape de _checkstyle_ dans le cycle de vie Maven.
-
-## Partie 2 - Outils de planification (25%)
+## Partie 1 - Outils de planification (25%)
 
 **Avant** d'entamer la programmation, nous vous demandons de lire attentivement les exigences du tp. Nous vous demandons ensuite de planifier vos tâches _de développement logiciel_ avec **Github**.
 
@@ -30,6 +24,12 @@ Les questions identifiées avec l'émoticône :scroll: (ainsi que leurs sous-que
 2. :scroll: **Créez des _issues_** afin de suivre votre progrès et de vous séparer la tâche. :warning: **Attention** Ce n'est pas nécéssairement 1 issue pour 1 feature. Assurez-vous également d'y remplir l'ensemble des parties tel que vu en laboratoire (l'issue doit au moins être en cours). Insérez une capture d'écran par issue (MAX 3).
 3. :scroll: **Créez des _PRs_** afin de suivre les changements effectués ou en attente. Assurez-vous également d'y remplir l'ensemble des parties tel que vu en laboratoire. Insérez une capture d'écran par PRs **une fois résolue** (MAX 3). Vous n'avez pas à _scroller_ afin de montrer le contenu des activités et commentaires.
 4. :scroll: **Créez un _Github Project_** contenant vos issues. Insérez une capture d'écran montrant le tableau résultant. Elle peut être effectuée au début comme à la fin de votre progrès. Nous devons au moins y voir les colonnes ainsi que quelques issues. Une seule capture suffit (pas besoin de _scroller_).
+
+## Partie 2 - Outils collaboratifs (5%)
+
+1. En équipe, choisissez une convention de _check style_ (_linting_) qui convient à tous.
+2. Configurez-la dans IntelliJ afin d'activer le formattage automatique.
+3. Ajoutez l'étape de _checkstyle_ dans le cycle de vie Maven.
 
 ## Partie 3 - Code (30%)
 
