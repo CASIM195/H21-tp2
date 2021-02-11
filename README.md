@@ -12,13 +12,17 @@
 - Ajouter des nouvelles fonctionnalités à partir de récits utilisateurs
 - Mettre en place un _workflow_ d'intégration continue
 
-## Partie 1 - Outils collaboratifs (10%)
+## À remettre
+
+Les questions identifiées avec l'émoticône :scroll: (ainsi que leurs sous-questions) devront être répondues à l'aide du fichier `exercices/tp2.md` déjà présent dans votre repo de projet. Lorsque votre travail sera terminé, nous vous demandons de créer un **tag** nommé `remise2` (**le nom doit être exact**). C'est la version liée à ce tag qui sera corrigée. Si vous omettez d'indiquer le tag, la **note de 0** vous sera attribuée.
+
+## Partie 1 - Outils collaboratifs (5%)
 
 1. En équipe, choisissez une convention de _check style_ (_linting_) qui convient à tous.
 2. Configurez-la dans IntelliJ afin d'activer le formattage automatique.
 3. Ajoutez l'étape de _checkstyle_ dans le cycle de vie Maven.
 
-## Partie 2 - Outils de planification (20%)
+## Partie 2 - Outils de planification (25%)
 
 **Avant** d'entamer la programmation, nous vous demandons de lire attentivement les exigences du tp. Nous vous demandons ensuite de planifier vos tâches _de développement logiciel_ avec **Github**.
 
