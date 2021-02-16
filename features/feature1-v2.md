@@ -11,11 +11,11 @@ En temps que vendeur, je désire pouvoir ajouter un produit en vente.
 ```ts
 {
   sellerId: string,
-  name: string, // max 40 caractères
+  name: string,
   description: string,
   initialPrice: number, // positif, arrondi à 2 décimales, min 1.00
   startTime: datetime, // ISO-8601 at UTC
-  duration: number // days, min 1 max 31
+  duration: number // **DAYS**, min 1 max 31
 }
 ```
 
