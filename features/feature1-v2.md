@@ -14,7 +14,7 @@ En temps que vendeur, je désire pouvoir ajouter un produit en vente.
   name: string,
   description: string,
   initialPrice: number, // positif, arrondi à 2 décimales, min 1.00
-  startTime: datetime, // ISO-8601 at UTC
+  startTime: datetime, // ISO-8601, exemple: "2020-01-01T00:00:00-02:00" ou "2020-01-01T00:00:00Z" (UTC)
   duration: number // **DAYS**, min 1 max 31
 }
 ```
