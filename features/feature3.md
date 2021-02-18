@@ -19,8 +19,8 @@ En tant qu'acheteur, je désire visualiser les détails d'un produit en vente.
   description: string,
   initialPrice: number, // arrondi à 2 décimales
   currentPrice: number, // arrondi à 2 décimales
-  startTime: datetime, // ISO-8601 at UTC
-  endTime: datetime // ISO-8601 at UTC
+  startTime: datetime, // ISO-8601 at UTC. exemple: "2020-01-01T00:00:00Z"
+  endTime: datetime // ISO-8601 at UTC. exemple: "2020-01-01T00:00:00Z"
 }
 ```
 
