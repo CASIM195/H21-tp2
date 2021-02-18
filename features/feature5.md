@@ -17,7 +17,7 @@ En tant qu'utilisateur du service, je désire visualiser les détails d'un vende
   id: string,
   name: string,
   description: string,
-  createdAt: datetime // ISO-8601 at UTC
+  createdAt: datetime // ISO-8601 at UTC. exemple: "2020-01-01T00:00:00Z"
 }
 ```
 
